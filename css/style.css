@@ -1,0 +1,74 @@
+/*Formato al cuerpo de la página*/
+body{
+    font-family: 'Lato', sans-serif;/*tipo de fuente para el texto de la página*/
+   }
+
+/*Formato de fuente a encabezados heading*/
+h1,h2,h3,h4,h5{
+    font-family: 'Anton', sans-serif;
+}
+
+/*Definiendo estilos banner - encabezado*/
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../img/bgfiambala.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0,0,0,0.6); 
+    background-blend-mode:darken;
+}
+/*Estilo del barra de navegación*/
+.bg-dark{
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+}
+
+/*Si la pantalla es mayor que 768px, el bg de la navegación es transparente*/ 
+@media(min-width: 768px){
+.bg-dark{background-color: transparent!important;}
+}
+
+/*Estilo de los elementos de la navegación*/
+.navg a{
+    font-family: 'Lato', sans-serif;
+    font-size: 23px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #f4f4f4 !important;/*!important se usa para obviar las funciones pred. de boostrap*/
+}
+
+/*Estilo al pasar el mouse por la nagevación*/
+.navg a:hover{
+    background-color: #58b0e463;
+}
+
+/*Estilo al texto del encabezado*/
+.text-header{
+   min-height: 100vh;
+   color: #f4f4f4; 
+}
+
+/*Estilo al span que se encuentra en el .text-header*/
+.text-header span{
+    letter-spacing: 3px;/*Seperación de la letras que se encuentran dentro del <span>*/
+    margin: 0 0 0 5px;
+}
+
+/*Estilo al párrafo que se encuentra en el .text-header*/
+.text-header p{
+    font-size: 1.2rem;
+}
+
+
+.cover{
+    height: 400px;
+    color: white;
+    background-size: cover; /*ajusta imagen de fondo al tamaño establecido*/
+    background-position: center; /*ajusta imagen al centro*/
+    background-color: rgba(0,0,0,0.9); /* Le da un color oscuro a la imagen para que se pueda ver el texto*/
+    background-blend-mode: darken;
+}

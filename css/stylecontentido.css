@@ -1,0 +1,207 @@
+/*Formato al cuerpo de la página*/
+body{
+    font-family: 'Lato', sans-serif;/*tipo de fuente para el texto de la página*/
+   }
+
+/*Formato de fuente a encabezados heading*/
+h1,h2,h3,h4,h5{
+    font-family: 'Anton', sans-serif;
+}
+
+/*Definiendo estilos banner - encabezado*/
+.header-contenido{
+    height: 400px;
+    background-image: url(/img/imgviñedo.jpg);
+    color: white;
+    background-size: cover; /*ajusta imagen de fondo al tamaño establecido*/
+    background-position: center; /*ajusta imagen al centro*/
+    background-color: rgba(0,0,0,0.5); /* Le da un color oscuro a la imagen para que se pueda ver el texto*/
+    background-blend-mode: darken;
+}
+
+/*Estilo del barra de navegación*/
+.bg-dark{
+    position: absolute !important;
+    /*z-index: 20;*/
+    width: 100%;
+}
+
+/*Si la pantalla es mayor que 768px, el bg de la navegación es transparente*/ 
+@media(min-width: 768px){
+.bg-dark{background-color: transparent!important;}
+}
+
+/*Estilo de los elementos de la navegación*/
+.navg a{
+    font-family: 'Lato', sans-serif;
+    font-size: 23px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #f4f4f4 !important;/*!important se usa para obviar las funciones pred. de boostrap*/
+}
+
+/*Estilo al pasar el mouse por la nagevación*/
+.navg a:hover{
+    background-color: #58b0e463;
+}
+
+/*Estilo al texto del encabezado*/
+.text-header{
+   min-height: 100vh;
+   color: #f4f4f4; 
+}
+
+/*Estilo al span que se encuentra en el .text-header*/
+.text-header span{
+    letter-spacing: 3px;/*Seperación de la letras que se encuentran dentro del <span>*/
+    margin: 0 0 0 5px;
+}
+
+/*Estilo al párrafo que se encuentra en el .text-header*/
+.text-header p{
+    font-size: 1.2rem;
+}
+
+.cover{
+    height: 400px;
+    color: white;
+    background-size: cover; /*ajusta imagen de fondo al tamaño establecido*/
+    background-position: center; /*ajusta imagen al centro*/
+    background-color: rgba(0, 0, 0, 0.5)!important; /* Le da un color oscuro a la imagen para que se pueda ver el texto*/
+    background-blend-mode: darken;
+}
+
+/*Estilo a la imagen que está dentro de la Tarjeta*/
+.cover-small{
+height: 250px;
+background-color: rgba(0,0,0,0..5);
+background-blend-mode: darken;
+}
+
+.inner{
+    overflow: hidden;
+}
+
+.inner img{
+    transition: all 1.5s ease;
+}
+
+.inner:hover img{
+    transform: scale(1.5);
+}
+
+
+/*Estilo al texto del footer*/
+.text-footer{
+    min-height: auto;
+    margin-left: 2rem;
+    color: #f4f4f4; 
+ }
+
+ footer{
+     background: #111111;
+     height: auto;
+     width: 100vw;
+     font-family: 'Lato', sans-serif;
+     padding-top: 40px;
+     color: #f4f4f4;
+ }
+
+ .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+ }
+
+ .footer-content h5{
+     font-size: 1.8rem;
+     font-weight: 400;
+     text-transform: capitalize;
+     line-height: 3rem;
+ }
+ 
+ .footer-content span{
+    letter-spacing: 3px;/*Seperación de la letras que se encuentran dentro del <span>*/
+    margin: 0 0 0 5px;
+ }
+
+ .footer-content p{
+    max-width: 500px;
+    margin: 10px;
+    line-height: 28px;
+    font-size: 1.100rem;
+ }
+
+ /*estilo a la clase social - iconos*/
+ .social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+ }
+
+ .social li{
+     margin: 0 10px;
+ }
+
+ .social a{
+     text-decoration: none;
+     color: #f4f4f4;
+ }
+
+ .social a i{
+     font-size: 1.5rem;
+     transition: color .4s ease;
+ }
+
+ .social a:hover i{
+     color: #0791a3;
+ }
+
+/* Estilo al i que se encuentra en el contenedor*/
+ .container i{
+     font-size: 2.5rem;
+     color: #16a722;
+ }
+
+ .container a:hover i{
+     color: #e69d01;
+     transition: color .4s ease;
+ }
+
+/*Estilo Galeria de Imágenes*/ 
+#galeria img{
+    width: 100%;
+    height: 250px;  
+}
+
+#galeria .col-lg-4{
+    padding: 15px;;
+}
+
+#galeria img:hover{
+    overflow:visible;
+}
+
+/*Estilos de diseño al FOOTER*/
+ .footer-bottom{
+     background: #000;
+     width: 100vw;
+     padding:20px 0;
+     text-align: center;
+ }
+
+ .footer-bottom p{
+     font-size: 14px;
+     word-spacing: 2px;
+     text-transform: capitalize;
+ }
+
+ .footer-bottom span{
+     text-transform: uppercase;
+     opacity: .4;
+     font-weight: 200;
+ }

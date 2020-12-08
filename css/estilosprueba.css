@@ -1,0 +1,53 @@
+Formato al cuerpo de la página
+body{
+    font-family: 'Noto Sans', sans-serif;/*tipo de fuente para el texto de la página*/
+   }
+
+/*Formato de fuente a encabezados heading*/
+h1,h2,h3,h4,h5{
+    font-family: 'Anton', sans-serif;
+}
+
+
+
+
+
+
+/*Formato al encabezado -
+.encabezado-contenedor{
+    height: 400px;
+    color: #ffffff;
+    background-image: url(/img/imggaleriafiambala2.jpg)
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0.6); 
+    background-blend-mode:darken;
+}
+*/
+
+/*Dando formato de sombra a la card*/ 
+.container-card{
+    background-color:#d1baba;
+}
+.card{
+    border: 0 !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.06) 
+}
+
+.img-card{
+    height: 200px;
+    
+}
+
+/**Footer**/
+.site-footer{
+    background-color: #333333;
+    margin: 0;
+    padding: 10px;
+}
+
+.copyright{
+    margin: 0;
+    color: #ffffff;
+    text-align: right;
+}
