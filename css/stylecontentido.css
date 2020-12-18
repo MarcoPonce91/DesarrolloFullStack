@@ -205,3 +205,20 @@ background-blend-mode: darken;
      opacity: .4;
      font-weight: 200;
  }
+
+ .avatar{
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+
+.trivia{
+    height:auto;
+    color: white;
+    background-size: cover; /*ajusta imagen de fondo al tamaño establecido*/
+    background-position: center; /*ajusta imagen al centro*/
+    background-color: rgba(0,0,0,0.5); /* Le da un color oscuro a la imagen para que se pueda ver el texto*/
+    background-blend-mode: darken;
+}
